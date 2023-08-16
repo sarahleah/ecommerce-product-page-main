@@ -1,15 +1,21 @@
 import React from 'react';
 import './QuantityPicker.css';
 
-const QuantityPicker = (
+const QuantityPicker = ({
   quantity,
   setQuantity
-) => {
+}) => {
+
+  const handleQuantityChange = (newQuantity) => {
+    setQuantity(newQuantity)
+  }
+
+  console.log(quantity, setQuantity)
   return (
-    <div class="quantity-picker">
-      <button>-</button>
-      <input type="number" />
-      <button>+</button>
+    <div className="quantity-picker">
+      <button onClick={() => handleQuantityChange(--quantity)}>-</button>
+      <input type="number" onChange={(event) => handleQuantityChange(event.target.value)} value={quantity}/>
+      <button onClick={() => handleQuantityChange(++quantity)}>+</button>
     </div>
   );
 };

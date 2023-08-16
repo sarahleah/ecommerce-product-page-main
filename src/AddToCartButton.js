@@ -3,7 +3,7 @@ import './AddToCartButton.css';
 
 const AddToCartButton = () => {
   return (
-    <button class="add-to-cart">Add to Cart</button>
+    <button className="add-to-cart">Add to Cart</button>
   );
 };
 

@@ -1,3 +1,35 @@
+.quantity-picker {
+  display: flex;
+}
+
 .quantity-picker > * {
-  padding: 14px;
+  background-color: var(--color-light-grayish-blue);
+  text-align: center;
+  padding: 16px;
+}
+
+.quantity-picker > button {
+  color: var(--color-orange);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.quantity-picker:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.quantity-picker:last-child {
+  border-radius: 0 6px 6px 0;
+}
+
+input[type=number] { 
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0; 
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
 }
