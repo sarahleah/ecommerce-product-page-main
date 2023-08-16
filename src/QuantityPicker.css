@@ -1,6 +1,5 @@
 .quantity-picker {
   display: flex;
-  padding-bottom: 2rem;
 }
 
 .quantity-picker > * {
@@ -15,12 +14,16 @@
   font-size: 24px;
 }
 
-.quantity-picker:first-child {
+.quantity-picker > button:first-child {
   border-radius: 6px 0 0 6px;
 }
 
-.quantity-picker:last-child {
+.quantity-picker > button:last-child {
   border-radius: 0 6px 6px 0;
+}
+
+.quantity-picker > input {
+  width: 3rem;
 }
 
 input[type=number] { 

@@ -1,7 +1,17 @@
 button.add-to-cart {
   color: white;
   background-color: var(--color-orange);
-  padding: 14px 64px;
+  padding: 16px 64px;
   border: none;
   border-radius: 6px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  box-shadow: 0px 20px 20px 0px var(--color-pale-orange);
+}
+
+.add-to-cart > img {
+  filter: brightness(0) invert(1);
 }

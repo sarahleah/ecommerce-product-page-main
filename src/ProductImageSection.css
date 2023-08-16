@@ -1,4 +1,5 @@
 .product-image-section > .selected-img {
-  height: 32rem;
+  width: 100%;
   border-radius: 16px;
+  margin: 0;
 }

@@ -38,7 +38,7 @@ ul, ol, h1, h2, h3, h4, h5, h6, p {
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 6rem;
   padding: 2rem 0;
 }
 
