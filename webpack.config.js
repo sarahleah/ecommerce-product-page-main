@@ -20,6 +20,30 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'svg-url-loader',
+            options: {
+              limit: 8192,
+              noquotes: true,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(png|jpg|jpeg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/',
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
