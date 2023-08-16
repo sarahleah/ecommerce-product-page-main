@@ -4,7 +4,19 @@
   padding-top: 2rem;
 }
 
-.thumbnail-section img {
+.thumbnail-section img, .thumbnail-section div {
   height: 6rem;
+}
+
+.thumbnail-section img {
   border-radius: 8px;
+}
+
+img.selected {
+  opacity: 60%;
+}
+
+div.selected {
+  border-radius: 10px;
+  border: 2px solid var(--color-orange);
 }

@@ -8,9 +8,9 @@ import thumbnail2 from '../images/image-product-3-thumbnail.jpg';
 import thumbnail3 from '../images/image-product-4-thumbnail.jpg';
 
 import productImg0 from '../images/image-product-1.jpg'
-import productImg1 from '../images/image-product-1.jpg'
-import productImg2 from '../images/image-product-1.jpg'
-import productImg3 from '../images/image-product-1.jpg'
+import productImg1 from '../images/image-product-2.jpg'
+import productImg2 from '../images/image-product-3.jpg'
+import productImg3 from '../images/image-product-4.jpg'
 
 import ThumbnailSection from './ThumbnailSection';
 
@@ -23,7 +23,7 @@ const ProductImageSection = () => {
   return (
     <div className="product-image-section">
       <img className="selected-img" src={imgs[selectedImgIndex]} alt="product img" />
-      <ThumbnailSection thumbnails={thumbnails} />
+      <ThumbnailSection setSelectedImgIndex={setSelectedImgIndex} selectedImgIndex={selectedImgIndex} thumbnails={thumbnails} />
     </div>
   );
 };
