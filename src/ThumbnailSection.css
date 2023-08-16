@@ -1,0 +1,10 @@
+.thumbnail-section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.thumbnail-section img {
+  height: 6rem;
+  border-radius: 8px;
+}

@@ -1,0 +1,24 @@
+nav, ul, .right {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  justify-content: flex-start;
+  padding: 2rem 0;
+  border-bottom: 2px solid var(--color-light-grayish-blue);
+}
+
+.avatar {
+  height: 2rem;
+}
+
+ul {
+  list-style: none;
+  color: var(--color-grayish-blue);
+}
+
+.right {
+  gap: 2rem;
+  align-self: flex-end;
+}

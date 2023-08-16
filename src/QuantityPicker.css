@@ -1,5 +1,6 @@
 .quantity-picker {
   display: flex;
+  padding-bottom: 2rem;
 }
 
 .quantity-picker > * {

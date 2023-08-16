@@ -7,6 +7,7 @@ const QuantityPicker = ({
 }) => {
 
   const handleQuantityChange = (newQuantity) => {
+    if (newQuantity < 0) return;
     setQuantity(newQuantity)
   }
 

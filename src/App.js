@@ -4,12 +4,16 @@ import './App.css';
 // components
 import Nav from './Nav';
 import ProductDetails from './ProductDetails';
+import ProductImageSection from './ProductImageSection';
 
 const App = () => {
   return (
     <div>
       <Nav />
-      <ProductDetails />
+      <main>
+        <ProductImageSection />
+        <ProductDetails />
+      </main>
     </div>
   );
 };

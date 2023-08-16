@@ -1,0 +1,30 @@
+.final-price {
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  color: var(--color-grayish-blue);
+  text-decoration: line-through;
+}
+
+.price-details {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.discount {
+  margin-top: 5px;
+  padding: 3px 6px;
+  background-color: var(--color-pale-orange);
+  border-radius: 4px;
+  font-size: 13px;
+  color: var(--color-orange);
+  font-weight: 700;
+}
