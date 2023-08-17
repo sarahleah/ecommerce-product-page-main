@@ -20,7 +20,9 @@ const Nav = () => {
       </div>
       <div className="right">
         <img src={cartIcon} alt="cart"></img>
-        <img className="avatar" src={avatar} alt="it's you!"></img>
+        <div className="avatar">
+          <img className="avatar" src={avatar} alt="it's you!"></img>
+        </div>
       </div>
     </nav>
   );

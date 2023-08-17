@@ -1,5 +1,9 @@
 import React from 'react';
+
 import './QuantityPicker.css';
+import plusIcon from '../images/icon-plus.svg';
+import minusIcon from '../images/icon-minus.svg';
+
 import { useCartContext } from './CartContextProvider';
 
 const QuantityPicker = () => {
@@ -19,9 +23,9 @@ const QuantityPicker = () => {
 
   return (
     <div className="quantity-picker">
-      <button onClick={() => handleQuantityChange(--cart.currentQuantity)}>-</button>
+      <button onClick={() => handleQuantityChange(--cart.currentQuantity)}><img src={minusIcon} alt="minus"/></button>
       <input type="number" onChange={(event) => handleQuantityChange(event.target.value)} value={cart.currentQuantity}/>
-      <button onClick={() => handleQuantityChange(++cart.currentQuantity)}>+</button>
+      <button onClick={() => handleQuantityChange(++cart.currentQuantity)}><img src={plusIcon} alt="plus"/></button>
     </div>
   );
 };

@@ -10,7 +10,21 @@ nav {
 }
 
 .avatar {
-  height: 2rem;
+  border-radius: 50%;
+  height: 2.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+div.avatar {
+  border: 2px solid transparent;
+}
+
+img.avatar:hover {
+  opacity: 0.6;
+}
+
+div.avatar:hover {
+  border: 2px solid var(--color-orange)
 }
 
 ul {
