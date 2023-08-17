@@ -11,7 +11,12 @@
 .quantity-picker > button {
   color: var(--color-orange);
   font-weight: 700;
-  font-size: 24px;
+  font-size: 32px;
+  transition: all 0.3s ease-in;
+}
+
+.quantity-picker > button:hover {
+  filter: opacity(0.4);
 }
 
 .quantity-picker > button:first-child {

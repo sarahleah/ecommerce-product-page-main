@@ -10,6 +10,22 @@ button.add-to-cart {
   justify-content: center;
   gap: 1rem;
   box-shadow: 0px 20px 20px 0px var(--color-pale-orange);
+  transition: all 0.3s ease-in-out;
+}
+
+button.add-to-cart:active {
+  filter: none;
+  transform: scale(0.95);
+  transition: all 0.5s ease-in-out;
+}
+
+button.add-to-cart:hover {
+  filter: opacity(0.7);
+}
+
+button.add-to-cart.disabled:active {
+  filter: none;
+  transform: none;
 }
 
 .add-to-cart > img {

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './ProductDetails.css';
 
 import QuantityPicker from './QuantityPicker';
@@ -6,10 +6,6 @@ import AddToCartButton from './AddToCartButton';
 import PriceDetails from './PriceDetails';
 
 const ProductDetails = () => {
-
-  const [quantity, setQuantity] = useState(0);
-  console.log(quantity)
-
   return (
     <div className="product-details">
       <h2>Sneaker Company</h2>
@@ -17,7 +13,7 @@ const ProductDetails = () => {
       <p className="item-description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
       <PriceDetails />
       <div className="action-section">
-        <QuantityPicker quantity={quantity} setQuantity={setQuantity}/>
+        <QuantityPicker />
         <AddToCartButton />
       </div>
     </div>

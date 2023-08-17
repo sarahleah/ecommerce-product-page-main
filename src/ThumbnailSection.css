@@ -6,13 +6,14 @@
 
 .thumbnail-section img, .thumbnail-section div {
   height: 6rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .thumbnail-section img {
   border-radius: 8px;
 }
 
-img.selected {
+img.selected, .thumbnail-section img:hover {
   opacity: 60%;
 }
 
