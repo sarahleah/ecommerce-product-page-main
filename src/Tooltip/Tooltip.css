@@ -1,0 +1,6 @@
+div.tooltip {
+  background-color: red;
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+}

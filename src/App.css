@@ -18,6 +18,10 @@
   --color-black-opacity-75: hsla(0, 0%, 0%, 0.75);
 }
 
+.container {
+  position: relative;
+}
+
 body {
   margin: 0 10%;
 }

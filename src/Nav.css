@@ -9,6 +9,24 @@ nav {
   border-bottom: 2px solid var(--color-light-grayish-blue);
 }
 
+.cart {
+  position: relative;
+}
+
+.cart > .quantity {
+  background-color: var(--color-orange);
+  color: white;
+  font-weight: 700;
+  font-size: 8px;
+  text-align: center;
+  border-radius: 12px;
+  position: absolute;
+  right: -4px;
+  top: -2px;
+  padding: 0 5px;
+  z-index: 1;
+}
+
 .avatar {
   border-radius: 50%;
   height: 2.5rem;
